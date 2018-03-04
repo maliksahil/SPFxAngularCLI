@@ -1,0 +1,17 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "hello-world-web-part": {
+      "components": [
+        {
+          "entrypoint": "./src/webparts/appWebPart.ts",
+          "manifest": "./src/webparts/appWebPart.manifest.json",
+          "entryModule": "./src/app/app.module.ts",
+          "entryModuleName": "AppModule"
+        }
+      ]
+    }
+  },
+  "externals": {}
+}

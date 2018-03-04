@@ -1,0 +1,27 @@
+{
+    "$schema": "https://dev.office.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+    "id": "a884f6f5-e74c-4932-972f-0e1431147413",
+    "alias": "AppWebPart",
+    "componentType": "WebPart",
+    "version": "*",
+    "manifestVersion": 2,
+    "requiresCustomScript": false,
+    "preconfiguredEntries": [
+        {
+            "groupId": "5c03119e-3074-46fd-976b-c60198311f70", 
+            "group": {
+                "default": "Other"
+            },
+            "title": {
+                "default": "AngularCLIWebPart"
+            },
+            "description": {
+                "default": "Sample Angular CLI Webpart"
+            },
+            "officeFabricIconFontName": "Page",
+            "properties": {
+                "description": "Sample SPFx WebPart with Angular CLI"
+            }
+        }
+    ]
+}
