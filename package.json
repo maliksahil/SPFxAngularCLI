@@ -4,8 +4,8 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "gulp serve",
-    "build": "ng build --prod",
+    "start": "gulp clean && gulp serve",
+    "build": "npm run env -s && ng serve --aot",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -16,18 +16,19 @@
     "@angular/common": "^5.2.0",
     "@angular/compiler": "^5.2.0",
     "@angular/core": "^5.2.0",
+    "@angular/elements": "^8.1.0",
     "@angular/forms": "^5.2.0",
     "@angular/http": "^5.2.0",
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
+    "@microsoft/sp-core-library": "~1.4.1",
+    "@microsoft/sp-lodash-subset": "~1.4.1",
+    "@microsoft/sp-office-ui-fabric-core": "~1.4.1",
+    "@microsoft/sp-webpart-base": "~1.4.1",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.6",
-    "zone.js": "^0.8.19",
-    "@microsoft/sp-core-library": "~1.4.1",
-    "@microsoft/sp-webpart-base": "~1.4.1",
-    "@microsoft/sp-lodash-subset": "~1.4.1",
-    "@microsoft/sp-office-ui-fabric-core": "~1.4.1"
+    "zone.js": "^0.8.19"
   },
   "devDependencies": {
     "@angular/cli": "~1.7.2",
@@ -54,6 +55,6 @@
     "@types/chai": ">=3.4.34 <3.6.0",
     "@types/mocha": ">=2.2.33 <2.6.0",
     "ajv": "~5.2.2",
-    "gulp": "~3.9.1"    
+    "gulp": "~3.9.1"
   }
 }

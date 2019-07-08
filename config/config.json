@@ -5,8 +5,19 @@
     "hello-world-web-part": {
       "components": [
         {
-          "entrypoint": "./src/webparts/appWebPart.ts",
-          "manifest": "./src/webparts/appWebPart.manifest.json",
+          "entrypoint": "./src/webparts/AppWebPart/appWebPart.ts",
+          "manifest": "./src/webparts/AppWebPart/appWebPart.manifest.json",
+          "entryModule": "./src/app/app.module.ts",
+          "entryModuleName": "AppModule"
+        }
+      ]
+    },
+
+    "new-hello-world-web-part": {
+      "components": [
+        {
+          "entrypoint": "./src/webparts/NewWebPart/newWebPart.ts",
+          "manifest": "./src/webparts/NewWebPart/newWebPart.manifest.json",
           "entryModule": "./src/app/app.module.ts",
           "entryModuleName": "AppModule"
         }

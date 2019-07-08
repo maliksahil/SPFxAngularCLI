@@ -1,5 +1,5 @@
 // import '../main';
-import { AppComponent } from '../app/app.component';
+import { AppComponent } from '../../app/app.component';
 
 import { Version } from '@microsoft/sp-core-library';
 
@@ -7,7 +7,7 @@ import 'reflect-metadata';
 
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 // @ts-ignore
-import { AppModuleNgFactory } from '../app/app.module.ngfactory';
+import { AppModuleNgFactory } from '../../app/app.module.ngfactory';
 
 import {
     BaseClientSideWebPart,
